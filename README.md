@@ -1,5 +1,38 @@
 # WeatherBot
+## Описание
 
-Simple telegram weather bot using PyTelegramApi and OpenWeather as an API
+Простой Telegram бот, написанный с использованием библиотеки pyTelegramBotAPI. Позволяет узнать погоду в любой точке мира, запросить прогноз погоды на 5 дней вперёд или включить мониторинг погоды и уведомить, когда температура упадёт или превысит заданные границы.
 
-Before using don't forget to modify config.py!
+## Использование
+
+Для работы программы требуется [Python](https://www.python.org/).
+
+Установите зависимости используя команду:
+
+```sh
+pip install -r requirments.txt
+```
+
+Дальнейший запуск бота запускается через файл main.py:
+- Используя IDE
+- Используя консоль:
+```sh
+python main.py
+```
+
+# Тестирование
+Проект частично покрыт юнит-тестами. Найти их можно в папке tests. Для их запуска необходима библиотека unittest. Обычно Python идёт сразу с указанной библиотекой, но если она у вас не установлена, то установить её можно с помощью команды:
+```sh
+pip install unittest
+```
+Для запуска тестов используем команду:
+```sh
+python *название файла с тестом*
+```
+
+# Источники
+
+- [Статья на Хабре про pyTelegramBotAPI](https://habr.com/ru/articles/580408/)
+- [Документация pyTelegramBotAPI](https://pytba.readthedocs.io/en/latest/)
+- [Бесплатный погодный API с хорошими тарифами](https://openweathermap.org/api)
+- [API от Яндекса (так себе тарифы)](https://yandex.ru/dev/weather/)
