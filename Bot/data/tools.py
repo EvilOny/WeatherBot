@@ -33,7 +33,7 @@ def geo(message, bot):
                      reply_markup=markup)
 
 
-def city(message, bot):
+def city(message):
     """
     Функция принимает на вход город от пользователя и возвращает долготу/широту
     """
@@ -61,7 +61,7 @@ def location_city(message, bot):
     Функция отлавливает название города для вывода погоды
     """
     try:
-        lat, lon = city(message.text, bot)
+        lat, lon = city(message.text)
         if cmd == 'current':
             weather(message, lat, lon, bot)
         else:
@@ -157,7 +157,7 @@ def alert_location(message, bot):
     Функция отвечает за назначение широты и долготы города для мониторинга погоды
     """
     global alert_lat, alert_lon
-    alert_lat, alert_lon = city(message.text, bot)
+    alert_lat, alert_lon = city(message.text)
     send_welcome(message, bot)
 
 
