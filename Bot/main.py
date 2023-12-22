@@ -1,6 +1,6 @@
 from Bot.tools.tools import createBot
 
-Token = '6905572228:AAFK6EHqjOHtZmUrwImZ4BBnWXuxjVNx1oc'
+Token = '6905572228:********WXuxjVNx1oc'
 
 
 def main():
