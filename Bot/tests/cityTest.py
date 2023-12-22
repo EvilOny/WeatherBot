@@ -1,5 +1,5 @@
 import unittest
-from Bot.tools.tools import city
+from src.tools.tools import city
 
 
 class CityTest(unittest.TestCase):

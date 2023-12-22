@@ -1,6 +1,6 @@
 from telebot import types
 import requests
-from Bot.tools.config import API_KEY, GEO_URL, WEATHER_URL, FORECAST_URL
+from src.tools.config import API_KEY, GEO_URL, WEATHER_URL, FORECAST_URL
 from matplotlib import pyplot as plt
 from datetime import datetime
 import matplotlib.dates as mdates

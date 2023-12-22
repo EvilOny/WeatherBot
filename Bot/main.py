@@ -1,6 +1,6 @@
-from Bot.tools.tools import createBot
+from src.tools.tools import createBot
 
-Token = '6905572228:********WXuxjVNx1oc'
+Token = 'ваш токен'
 
 
 def main():
